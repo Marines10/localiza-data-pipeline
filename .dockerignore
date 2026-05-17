@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyt
+*.cache
+.pytest_cache/
+.vscode/
+.idea/
+venv/
+.venv/
+.env
+.git/
+.dockerignore
+fraud_transactions/sink_data/
+fraud_transactions/source_data/df_fraud_credit.csv

@@ -1,5 +1,5 @@
 from pyspark.sql import DataFrame
-from pyspark.sql.functions import col, lower, row_number, trim
+from pyspark.sql.functions import col, row_number
 from pyspark.sql.window import Window
 
 from fraud_transactions.utils.paths import CURATED_PATH, TOP3_RECEIVING_ADDRESS_PATH

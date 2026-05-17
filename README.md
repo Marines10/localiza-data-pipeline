@@ -25,7 +25,7 @@ Implementação de um pipeline de dados com:
 - `Dockerfile` - imagem do Airflow com Java, PySpark e Delta
 - `docker-compose.yml` - define o container Airflow para orquestração local
 - `requirements.txt` - dependências Python do projeto
-- `dags/fraud_transactions_pipeline_dag.py.py` - DAG do Airflow que orquestra o pipeline
+- `dags/fraud_transactions_pipeline_dag.py` - DAG do Airflow que orquestra o pipeline
 - `fraud_transactions/source_data/df_fraud_credit.csv` - arquivo de origem (não está no repositório por causa do tamanho)
 - `fraud_transactions/jobs/ingestion/` - jobs de landing, raw e curated
 - `fraud_transactions/jobs/analytics/` - jobs de analytics para os resultados exigidos
