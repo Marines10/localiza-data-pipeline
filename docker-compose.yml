@@ -1,0 +1,13 @@
+services:
+  airflow:
+    build: .
+    container_name: localiza_airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./fraud_transactions:/opt/airflow/fraud_transactions
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    command: >
+      bash -lc "airflow db init && airflow users create --username airflow --password airflow --firstname Marines --lastname Lopes --role Admin --email airflow@example.com || true && airflow standalone"
